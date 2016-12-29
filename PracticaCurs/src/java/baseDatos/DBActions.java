@@ -16,7 +16,7 @@ import java.util.ArrayList;
 public class DBActions {
     public ArrayList <String> getEmployees() {
         DBConnection con = new DBConnection();
-        ArrayList <String> res = new ArrayList <String> ();
+        ArrayList <String> res = new ArrayList <> ();
         try {
             con.open();
             Statement st = con.getConection().createStatement();

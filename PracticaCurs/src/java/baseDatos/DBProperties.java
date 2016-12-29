@@ -7,12 +7,13 @@ package baseDatos;
 
 /**
  *
- * @author mascport
+ * @author mmartin
  */
 public class DBProperties {
-    static public final String host = "localhost";
-    static public final String port = "3306";
-    static public final String db = "employees";
-    static public final String user = "root";
-    static public final String pass = "";
+    //Constantes de acceso a la BBDD
+    static public final String HOST = "localhost";
+    static public final String PORT = "3306";
+    static public final String DATABASE = "employees";
+    static public final String USER = "masterbd";
+    static public final String PASSWORD = "m4st3rbd";
 }

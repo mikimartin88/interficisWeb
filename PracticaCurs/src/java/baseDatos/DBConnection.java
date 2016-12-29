@@ -24,8 +24,8 @@ public class DBConnection {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             con = DriverManager.getConnection("jdbc:mysql://"
-                    + DBProperties.host + ":" + DBProperties.port +
-                    "/" + DBProperties.db, DBProperties.user, DBProperties.pass);
+                    + DBProperties.HOST + ":" + DBProperties.PORT +
+                    "/" + DBProperties.DATABASE, DBProperties.USER, DBProperties.PASSWORD);
         } catch (Exception ex) {
             ex.printStackTrace();
         }
