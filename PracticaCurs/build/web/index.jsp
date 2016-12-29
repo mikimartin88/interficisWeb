@@ -1,10 +1,10 @@
 <%-- 
     Document   : index
-    Created on : 30-nov-2016, 20:07:18
-    Author     : mascport
+    Created on : 30-dic-2016, 20:07:25
+    Author     : mmartin
 --%>
 
-<%@page import="adiiubd.PruebaBD"%>
+<%@page import="baseDatos.PruebaBD"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
