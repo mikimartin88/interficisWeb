@@ -14,7 +14,7 @@
     </head>
     <body>
         <h1>Hello World!</h1>
-        
+        <h2>Escribo esto pa que veas que ya lo he cloneado jeje</h2>
         <%
             PruebaBD tmp = new PruebaBD();
             out.print(tmp.pintar());
