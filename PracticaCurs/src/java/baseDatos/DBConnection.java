@@ -7,11 +7,7 @@ package baseDatos;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-
-/**
- *
- * @author miquel
- */
+/**/
 public class DBConnection {
 
     private Connection con;
@@ -20,12 +16,12 @@ public class DBConnection {
         con = null;
     }
 
-    public void open() {
+    public void open(String host, String port, String database, String user, String password) {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             con = DriverManager.getConnection("jdbc:mysql://"
-                    + DBProperties.HOST + ":" + DBProperties.PORT +
-                    "/" + DBProperties.DATABASE, DBProperties.USER, DBProperties.PASSWORD);
+                    + host + ":" + port
+                    + "/" + database, user, password);
         } catch (Exception ex) {
             ex.printStackTrace();
         }
@@ -39,7 +35,7 @@ public class DBConnection {
             ex.printStackTrace();
         }
     }
-    
+
     public Connection getConection() {
         return con;
     }

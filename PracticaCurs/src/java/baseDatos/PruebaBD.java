@@ -5,6 +5,7 @@
  */
 package baseDatos;
 
+import baseDatos.DBEmployees.DBEmployeesActions;
 import java.util.ArrayList;
 
 /**
@@ -14,7 +15,7 @@ import java.util.ArrayList;
 public class PruebaBD {
 
     public String pintar(){
-        DBActions dba = new DBActions();
+        DBEmployeesActions dba = new DBEmployeesActions();
         ArrayList <String> res = dba.getEmployees();
         String aux = "";
         for(int i=0;i<res.size();i++) {
